@@ -5,61 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingshot Viking Vengeance Guide</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        .lang-btn-container { display: flex; justify-content: flex-end; margin-bottom: 20px; }
-        .lang-btn { background-color: #2b6cb0; color: white; border: none; padding: 8px 16px; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer; }
-        h1 { color: #1a365d; border-bottom: 3px solid #2b6cb0; padding-bottom: 10px; font-size: 28px; text-align: center; }
-        h2 { color: #2b6cb0; font-size: 20px; margin-top: 30px; border-left: 5px solid #2b6cb0; padding-left: 10px; }
-        .intro { background-color: #ebf8ff; border-left: 4px solid #3182ce; padding: 15px; margin-bottom: 25px; border-radius: 4px; }
-        .highlight { font-weight: bold; color: #c53030; }
-        .focus-box { background-color: #fffaf0; border: 1px solid #feebc8; border-left: 4px solid #dd6b20; padding: 15px; border-radius: 4px; margin-top: 25px; }
-        .lang-en { display: none; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .lang-btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            background-color: #2b6cb0;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .lang-btn:hover {
+            background-color: #1a365d;
+        }
+        h1 {
+            color: #1a365d;
+            border-bottom: 3px solid #2b6cb0;
+            padding-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+        h2 {
+            color: #2b6cb0;
+            font-size: 20px;
+            margin-top: 30px;
+            border-left: 5px solid #2b6cb0;
+            padding-left: 10px;
+        }
+        .intro {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #c53030;
+        }
+        .config-list {
+            list-style-type: circle;
+            margin-top: 5px;
+            padding-left: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 10px 10px 10px 30px;
+        }
+        .focus-box {
+            background-color: #fffaf0;
+            border: 1px solid #feebc8;
+            border-left: 4px solid #dd6b20;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 25px;
+        }
+        /* 語言切換隱藏邏輯 */
+        .lang-en {
+            display: none;
+        }
     </style>
 </head>
 <body>
+
     <div class="lang-btn-container">
         <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">English</button>
     </div>
 
-    <!-- 中文內容與英文內容架構完整保留 -->
+    <!-- 中文內容 -->
     <div class="lang-zh">
         <h1>《Kingshot》維京人的掠奪：高分防守與積分極大化核心攻略</h1>
-        <div class="intro"><p>本篇攻略旨在解析維京活動的積分機制與兵種調配策略。</p></div>
+        
+        <div class="intro">
+            <p>本篇攻略旨在解析維京活動的積分機制，並提供聯盟成員或個人如何透過「兵種調配」與「增援策略」來斬獲最高積分獎勵。</p>
+        </div>
+
         <h2>一、 兵種相剋與積分機制</h2>
-        <p>建議透過步兵增援盟友來極大化積分，第10波與第20波總部戰可採用純步兵或步騎混編策略。</p>
-        <h2>二、 增援對象篩選與防搶分細節</h2>
-        <p>受增援盟友必須清空城內留守兵力以避免稀釋分數，並注意第7、14、17波精英波次確保盟友在線。</p>
+        <ul>
+            <li><strong>兵種得分效益：</strong>維京活動的積分獲取主要依賴<span class="highlight">步兵增援盟友</span>，其次為騎兵。若能調配出<strong>全步兵滿編部隊</strong>進行外派增援，將能實現積分收益最大化。</li>
+            <li>
+                <strong>防守失敗風險與兵種混編（第 10、20 波總部戰）：</strong>
+                <ul>
+                    <li><strong>第 10 波（總部）：</strong>建議全員派遣<strong>純步兵</strong>駐守，以剋制敵方兵種並穩拿積分。</li>
+                    <li><strong>第 20 波（總部）：</strong>此波<strong>騎兵的得分效益大於步兵</strong>。然而，為了兼顧「防守成功率」與「高積分」，不建議盲目派全騎兵。最佳策略為<strong>步騎混編</strong>，可依聯盟整體戰力選擇以下比例調整：</li>
+                </ul>
+                <ul class="config-list">
+                    <li><em>穩健配置：</em>50% 步兵 + 50% 騎兵</li>
+                    <li><em>激進配置：</em>30% 步兵 + 70% 騎兵</li>
+                    <li><em>極限高分配置：</em>20% 步兵 + 80% 騎兵</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>二、 增援對象篩選與「防搶分」細節</h2>
+        <ul>
+            <li><strong>清空城內留守兵力（關鍵）：</strong>接受增援的盟友，<span class="highlight">城內必須將步兵（以及騎兵）全部外派清空</span>。若被增援者的城堡內留有自身步兵，將會嚴重稀釋並搶奪增援者的擊殺積分。</li>
+            <li><strong>特殊菁英波次（第 7、14、17 波）：</strong>此三波為高倍率積分波次，且<strong>維京人只會攻擊在線玩家</strong>。開打前務必確認受增援的盟友「人在線上」，否則該波次城堡未受擊，將錯失大量積分。</li>
+            <li><strong>避免「多人分攤」稀釋分數：</strong>每一波城堡受擊的總積分是固定的。若一個城堡同時被 10 個人增援，總分將被 10 人瓜分。<strong>最佳增援策略是尋找「無人增援」或「極少人增援」的空檔城堡</strong>，方能獨吞或斬獲該城大部份的積分。</li>
+        </ul>
+
         <div class="focus-box">
-            <h2>三、 終極進階技巧：農場號獨佔積分法</h2>
-            <p>利用專屬農場號清空兵力並接受大號全額增援，以完全獨佔擊殺積分。</p>
+            <h2>三、 終極進階技巧：農場號「獨佔積分」法</h2>
+            <p><strong>建置專屬農場號（小號）：</strong></p>
+            <p>最完美的積分操作是將自己的農場小號加入聯盟。活動期間，<strong>將小號城內的所有兵力全部派空，並由大號的「純步兵/特定兵種」進行全額增援</strong>。如此一來，該城堡的擊殺積分將由大號完全獨佔，不再受任何外在因素稀釋，能穩定且大幅度提升大號的平均排名分數。</p>
         </div>
     </div>
 
+    <!-- 英文內容 -->
     <div class="lang-en">
-        <h1>Kingshot Viking Vengeance: Core Strategy</h1>
-        <div class="intro"><p>This guide analyzes scoring mechanics and reinforcement tactics for Viking Vengeance.</p></div>
+        <h1>Kingshot Viking Vengeance: Core Strategy for High Score Defense & Score Maximization</h1>
+        
+        <div class="intro">
+            <p>This guide aims to analyze the scoring mechanics of the Viking Vengeance event and provide alliance members or individuals with strategies on how to achieve maximum points through troop allocation and reinforcement tactics.</p>
+        </div>
+
         <h2>1. Troop Matchups & Scoring Mechanics</h2>
-        <p>Maximize points by reinforcing with Infantry and deploying appropriate ratios for HQ waves.</p>
-        <h2>2. Reinforcement Target Selection</h2>
-        <p>Ensure reinforced cities are empty of own troops and targets are online during special waves.</p>
+        <ul>
+            <li><strong>Troop Scoring Efficiency:</strong> Points in the Viking event mainly rely on <span class="highlight">reinforcing allies with Infantry</span>, followed by Cavalry. Deploying a <strong>full infantry squad</strong> for reinforcements will maximize your score returns.</li>
+            <li>
+                <strong>Defeat Risks & Mixed Troop Deployments (Wave 10 & 20 HQ Battles):</strong>
+                <ul>
+                    <li><strong>Wave 10 (HQ):</strong> It is highly recommended that all members deploy <strong>pure Infantry</strong> to counter the enemy and secure points safely.</li>
+                    <li><strong>Wave 20 (HQ):</strong> In this wave, <span class="highlight">Cavalry yields higher point efficiency than Infantry</span>. However, to balance "defense success rate" and "high score", blindly sending full cavalry is not advised. The best strategy is a <strong>mixed Infantry/Cavalry deployment</strong>. Choose from the following ratios based on alliance strength:</li>
+                </ul>
+                <ul class="config-list">
+                    <li><em>Stable Configuration:</em> 50% Infantry + 50% Cavalry</li>
+                    <li><em>Aggressive Configuration:</em> 30% Infantry + 70% Cavalry</li>
+                    <li><em>Extreme High Score Configuration:</em> 20% Infantry + 80% Cavalry</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>2. Reinforcement Target Selection & Score-Stealing Details</h2>
+        <ul>
+            <li><strong>Clear Castle Garrison (Critical):</strong> The ally receiving reinforcements <span class="highlight">must deploy all their own Infantry (and Cavalry) out of their castle</span>. If the garrisoned ally keeps their own infantry at home, it will severely dilute and steal the kill points meant for the reinforcer.</li>
+            <li><strong>Special Elite Waves (Waves 7, 14, 17):</strong> These three waves are high-multiplier point waves, and <strong>Vikings only attack online players</strong>. Before these waves start, make sure the reinforced ally is online; otherwise, the castle will not be attacked, and you will miss out on massive points.</li>
+            <li><strong>Avoid "Multi-Player Split" Dilution:</strong> The total point pool per wave for a targeted castle is fixed. If a castle is reinforced by 10 people simultaneously, the total score will be split among 10 players. <strong>The best reinforcement strategy is to find "un-reinforced" or "barely reinforced" vacant castles</strong> to secure all or most of the points for yourself.</li>
+        </ul>
+
         <div class="focus-box">
-            <h2>3. Farm Account Method</h2>
-            <p>Monopolize points by reinforcing empty farm accounts with your main account.</p>
+            <h2>3. Ultimate Advanced Tactic: Farm Account "Point Monopolization" Method</h2>
+            <p><strong>Set Up a Dedicated Farm Account (Alt Account):</strong></p>
+            <p>The most flawless scoring method is to bring your own farm alt into the alliance. During the event, <strong>send all troops out of the farm account to leave it completely empty, then fully reinforce it using your main account's "pure Infantry/specific troop types."</strong> This ensures that all kill points from that castle are completely monopolized by your main account, free from external dilution, steadily and significantly boosting your main's average ranking score.</p>
         </div>
     </div>
 
     <script>
         function toggleLanguage() {
-            const zh = document.querySelectorAll('.lang-zh');
-            const en = document.querySelectorAll('.lang-en');
+            const zhElements = document.querySelectorAll('.lang-zh');
+            const enElements = document.querySelectorAll('.lang-en');
             const btn = document.getElementById('langToggle');
-            if (zh[0].style.display === 'none') {
-                zh.forEach(el => el.style.display = 'block');
-                en.forEach(el => el.style.display = 'none');
+
+            if (zhElements[0].style.display === 'none') {
+                // 切換回中文
+                zhElements.forEach(el => el.style.display = 'block');
+                enElements.forEach(el => el.style.display = 'none');
                 btn.textContent = 'English';
             } else {
-                zh.forEach(el => el.style.display = 'none');
-                en.forEach(el => el.style.display = 'block');
+                // 切換到英文
+                zhElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'block');
                 btn.textContent = '中文';
             }
         }
